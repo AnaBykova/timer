@@ -32,6 +32,6 @@ const args = process.argv.slice(2);
 
 // Set timers for each valid argument
 args.forEach((arg) => {
-  const time = parseInt(arg);
+  const time = Number(arg);
   setTimer(time);
 });
